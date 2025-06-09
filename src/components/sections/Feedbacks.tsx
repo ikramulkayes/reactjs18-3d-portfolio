@@ -1,66 +1,76 @@
-import { motion } from "framer-motion";
+import React from "react";
+import { SectionWrapper } from "../../hoc";
 
-import { styles } from "../../constants/styles";
-import { fadeIn } from "../../utils/motion";
-import { testimonials } from "../../constants";
-import { Header } from "../atoms/Header";
-import { TTestimonial } from "../../types";
-import { config } from "../../constants/config";
+const profileImg = "https://cvanalyzersmartgrad.blob.core.windows.net/octobrain-images/1749496089080-427974429_3600949756839247_6184173489217855334_n_1.jpg"; // Replace with actual image path
 
-const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
-  index,
-  testimonial,
-  name,
-  designation,
-  company,
-  image,
-}) => (
-  <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-10"
-  >
-    <p className="text-[48px] font-black text-white">"</p>
+const summary = `Hello I am Ikramul! To save you time, here’s a concise summary of my journey so far:`;
 
-    <div className="mt-1">
-      <p className="text-[18px] tracking-wider text-white">{testimonial}</p>
+const highlights = [
+  { text: "Hands-on experience in ", highlight: "AI, MLOps, and DevOps", tail: ", applied across academic and freelance projects" },
+  { text: "Built solutions like ", highlight: "Instagram scrapers, CV analyzers, and admin dashboards", tail: " using FastAPI, Selenium, Svelte, and Node.js" },
+  { text: "Contributed to ", highlight: "MVP development", tail: " at Kater & Out using Express.js and Tailwind" },
+  { text: "Developed computer vision modules using ", highlight: "YOLOv5 and OpenCV", tail: " for object detection and motion tracking" },
+  { text: "Built complete platforms including ", highlight: "CI/CD pipelines and cloud hosting", tail: " with Docker, Azure, and GitHub Actions" },
+  { text: "Developed both frontend and backend systems with ", highlight: "React, Svelte, Node.js, Django" },
+  { text: "Worked with diverse tech stacks including ", highlight: "MongoDB, PostgreSQL, RabbitMQ, Prisma" },
+  { text: "Experience integrating ", highlight: "LLMs with LangChain" },
+  { text: "Actively contributed to ", highlight: "robotics R&D", tail: " with Jetson Xavier, Raspberry Pi, and ROS" },
+  { text: "Built internal tools like ", highlight: "BRAC USIS seat notifier", tail: " and agricultural management systems" },
+  { text: "Delivered software in sectors like ", highlight: "education, agriculture, digital marketing, and robotics" },
+  { text: "Finalist at ", highlight: "Bangladesh AI Hackathon 2025" },
+  { text: "Awarded ", highlight: "50% Merit-Based Scholarship", tail: " at BRAC University" },
+];
 
-      <div className="mt-7 flex items-center justify-between gap-1">
-        <div className="flex flex-1 flex-col">
-          <p className="text-[16px] font-medium text-white">
-            <span className="blue-text-gradient">@</span> {name}
-          </p>
-          <p className="text-secondary mt-1 text-[12px]">
-            {designation} of {company}
-          </p>
-        </div>
-
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="h-10 w-10 rounded-full object-cover"
-        />
-      </div>
-    </div>
-  </motion.div>
-);
-
-const Feedbacks = () => {
-  return (
-    <div className="bg-black-100 mt-12 rounded-[20px]">
-      <div
-        className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
-      >
-        <Header useMotion={true} {...config.sections.feedbacks} />
-      </div>
-      <div
-        className={`${styles.paddingX} -mt-20 flex flex-wrap gap-7 pb-14 max-sm:justify-center`}
-      >
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
-      </div>
-    </div>
-  );
+const contact = {
+  position: "Trainee Software Developer",
+  company: "Kater & Out",
+  email: "ikramul.kayesgg@gmail.com",
+  phone: "+880-1994225023",
+  cv: "#", // Replace with actual CV link
 };
 
-export default Feedbacks;
+
+const Resume = () => (
+  <section>
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-tertiary rounded-lg p-8 shadow">
+      <div className="flex-shrink-0 mb-6 md:mb-0">
+        <img src={profileImg} alt="Profile" className="rounded-lg w-[180px] h-[220px] object-cover" />
+      </div>
+      <div className="flex-1">
+        <p className="text-lg mb-4">{summary}</p>
+        <ul className="list-disc ml-6 space-y-2 text-base">
+          {highlights.map((item, idx) => (
+            <li key={idx}>
+              {item.text}
+              {item.highlight && <span className="text-green-400 font-semibold">{item.highlight}</span>}
+              {item.tail && <span>{item.tail}</span>}
+            </li>
+          ))}
+        </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-base">
+          <div>
+            <span className="font-semibold text-green-400">Current Position:</span> {contact.position}
+          </div>
+          <div>
+            <span className="font-semibold text-green-400">Company:</span> {contact.company}
+          </div>
+          <div>
+            <span className="font-semibold text-green-400">Phone:</span> {contact.phone}
+          </div>
+        </div>
+        <div className="mt-2">
+          <span className="font-semibold text-green-400">E-mail:</span> {contact.email}
+        </div>
+        <a
+          href={contact.cv}
+          className="inline-block mt-6 px-8 py-3 border-2 border-green-400 text-green-400 rounded hover:bg-green-400 hover:text-black font-semibold transition"
+          download
+        >
+          Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+);
+
+export default SectionWrapper(Resume, "resume");
