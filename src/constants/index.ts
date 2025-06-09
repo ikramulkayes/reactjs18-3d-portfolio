@@ -55,7 +55,7 @@ const services: TService[] = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Chatbot Solution Provider",
     icon: mobile,
   },
   {
@@ -63,7 +63,7 @@ const services: TService[] = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI Enthusiast",
     icon: creator,
   },
 ];
@@ -125,55 +125,58 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "Trainee Software Developer",
+    companyName: "Home & Out",
+    icon: web,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Home & Out is a USA-based food catering platform",
+      "Contributed towards making the MVP using Express.js",
+      "Made different components using Tailwind",
+      "Tested the MVP to find and solve bugs",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+    title: "Freelance Software Developer",
+    companyName: "Self_Employed",
+    icon: backend,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "November 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created an Instagram scraper for a Digital Marketing platform using Selenium, Svelte, Proxy, Rabbitmq, FastApi and MongoDB",
+      "Designed Database Schema for Octobrain EdTech Platform using Prisma and PostgreSQL",
+      "Created the full backend of Octobrain Using Nodejs",
+      "Developed the Admin panel frontend using Svelte",
+      "Developed the CICD pipeline to host the containerised image on Azure",
+      "Created the CV analyzer for Smartgrad an AI consultant Service",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
+    title: "General Member of AI and Control",
+    companyName: "BRACU Alter Robotics Team",
+    icon: creator,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "April 2023 - November 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Alter is a Robotics Team from Bracu University",
+      "Fine-tuning computer vision models (Yolov5) for detecting necessary objects for rescue missions",
+      "Prepared multiple datasets using selenium",
+      "Using a switching mechanism to switch control between Jetson Javier and Rasberry.py for power saving.",
+      "Wrote the functionality where the rover will be able to follow the rescuer using OpenCV and Mobile Net",
+      "Added functionality to the rover where it will be able to detect motion using OpenCV",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
+    title: "Junior Contributor of AI",
+    companyName: "BRACU Dichari",
+    icon: mobile,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "October 2022 - April 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Dichari is the first team from Bangladesh to participate in European Robotics League",
+      "Wrote the code for controlling rover arms consisting of multiple actuators and motors using Arduino-Mega and Monster-Motor drivers.",
+      "Contributed to making the rover follow a specific path using GPS",
     ],
   },
 ];
@@ -207,67 +210,49 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "BD Smart Agricultural System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Collaborative blogging, efficient auctions, and streamlined delivery tracking for agricultural solutions in Bangladesh. React as frontend, Django as backend, containerized MySQL as database.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "django", color: "green-text-gradient" },
+      { name: "mysql", color: "pink-text-gradient" },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "#",
   },
   {
-    name: "Job IT",
+    name: "University Club Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "PHP-based website for managing club activities, events, and member roles. MySQL as database.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "php", color: "blue-text-gradient" },
+      { name: "mysql", color: "green-text-gradient" },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "#",
   },
   {
-    name: "Trip Guide",
+    name: "Artillery War",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "OpenGL project: two artillery battle with each other by shooting artillery shells at the opponents.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "opengl", color: "blue-text-gradient" },
+      { name: "c++", color: "green-text-gradient" },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "#",
+  },
+  {
+    name: "USIS Advising seat notifier",
+    description:
+      "Dynamic solution for BRAC University Advising Platform. Alerts users via email when a coveted seat becomes available in a specified course section.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "automation", color: "green-text-gradient" },
+    ],
+    image: carrent,
+    sourceCodeLink: "#",
   },
 ];
 

@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
+    title: "MD Ikramul Kayes - Portfolio",
+    fullName: "MD Ikramul Kayes",
     email: "johndoe@mail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "MD Ikramul Kayes",
+    p: ["I develop Web Apps",  "AI powered solutions"],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +67,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I’m a Computer Science student at BRAC University with a strong focus on Natural Language Processing and backend development. I work part-time as a remote Trainee Software Developer at Home&Out, a USA-based startup, and also build data scraping tools for social media. At BRACU, I’ve contributed to Dichari’s AI & Control sub-team and served as an HR for multiple subteams. I’m an Approver at CNCF, a Microsoft Learn Student Ambassador, and was First Runner-Up at NASA Space Apps Challenge 2022 (Dhaka). Technically, I specialize in backend (Node.js, FastAPI, Next.js), frontend (React, Svelte), and databases (PostgreSQL, MySQL, MongoDB). I’m skilled in DevOps tools like Docker, Kubernetes, Terraform, and Azure, and experienced in deep learning (TensorFlow, PyTorch, Keras). My interests span deep learning, computer vision, robotics, and blockchain.`,
     },
     experience: {
       p: "What I have done so far",
