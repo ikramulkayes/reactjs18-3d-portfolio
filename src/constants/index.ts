@@ -134,6 +134,18 @@ const technologies: TTechnology[] = [
 ];
 
 const experiences: TExperience[] = [
+    {
+    title: "Student Tutor",
+    companyName: "BRACU CSE Department",
+    icon: backend,
+    iconBg: "#383E56",
+    date: "November 2024 - Present",
+    points: [
+      "Conducted consultation",
+      "Checked Assignment and quiz script",
+      "Helped student during Datastructure and Basic Programing lab",
+    ],
+  },
   {
     title: "Trainee Software Developer",
     companyName: "Home & Out",
@@ -189,6 +201,7 @@ const experiences: TExperience[] = [
       "Contributed to making the rover follow a specific path using GPS",
     ],
   },
+
 ];
 
 const testimonials: TTestimonial[] = [
