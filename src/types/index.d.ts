@@ -42,3 +42,17 @@ export type TMotion = {
   delay: number;
   duration: number;
 };
+
+export type TEducation = {
+  degree: string;
+  institution: string;
+  duration: string;
+  highlights: string[];
+};
+
+export type TVolunteering = {
+  title: string;
+  organization: string;
+  duration: string;
+  description: string[];
+};

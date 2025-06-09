@@ -10,6 +10,8 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Education,
+  Volunteering,
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
@@ -29,7 +31,9 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Education />
         <Experience />
+        <Volunteering />
         <Tech />
         <Works />
         <Feedbacks />

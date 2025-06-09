@@ -5,6 +5,8 @@ import type {
   TExperience,
   TTestimonial,
   TProject,
+  TEducation,
+  TVolunteering,
 } from "../types";
 
 import {
@@ -253,6 +255,39 @@ const projects: TProject[] = [
     ],
     image: carrent,
     sourceCodeLink: "#",
+  },
+];
+
+export const education: TEducation[] = [
+  {
+    degree: "Bachelor of Computer Science and Engineering",
+    institution: "BRAC University (Dhaka, Bangladesh)",
+    duration: "July 2021 - Present",
+    highlights: [
+      "Executive at Brac University Leadership and Development Forum",
+    ],
+  },
+];
+
+export const volunteering: TVolunteering[] = [
+  {
+    title: "Alpha Student Ambassador",
+    organization: "Microsoft Learn Student Ambassador",
+    duration: "May 2022 - March 2023",
+    description: [
+      "It is the student ambassadors program by Microsoft",
+      "Joined and hosted multiple international seminars on Microsoft technologies.",
+    ],
+  },
+  {
+    title: "Maintainer of Bangla Glossary",
+    organization: "Cloud-Native Computing Foundation (CNCF)",
+    duration: "February 2022 - February 2023",
+    description: [
+      "CNCF oversees open source cloud-native technologies",
+      "Guiding contributor to making open-source contribution",
+      "Added correction to contributors' commits",
+    ],
   },
 ];
 
