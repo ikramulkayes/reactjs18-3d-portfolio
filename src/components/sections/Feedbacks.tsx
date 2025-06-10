@@ -6,18 +6,18 @@ const profileImg = "https://cvanalyzersmartgrad.blob.core.windows.net/octobrain-
 const summary = `Hello I am Ikramul! To save you time, here’s a concise summary of my journey so far:`;
 
 const highlights = [
-  { text: "Hands-on experience in ", highlight: "AI, MLOps, and DevOps", tail: ", applied across academic and freelance projects" },
-  { text: "Built solutions like ", highlight: "Instagram scrapers, CV analyzers, and admin dashboards", tail: " using FastAPI, Selenium, Svelte, and Node.js" },
-  { text: "Contributed to ", highlight: "MVP development", tail: " at Kater & Out using Express.js and Tailwind" },
-  { text: "Developed computer vision modules using ", highlight: "YOLOv5 and OpenCV", tail: " for object detection and motion tracking" },
-  { text: "Built complete platforms including ", highlight: "CI/CD pipelines and cloud hosting", tail: " with Docker, Azure, and GitHub Actions" },
-  { text: "Developed both frontend and backend systems with ", highlight: "React, Svelte, Node.js, Django" },
-  { text: "Worked with diverse tech stacks including ", highlight: "MongoDB, PostgreSQL, RabbitMQ, Prisma" },
-  { text: "Experience integrating ", highlight: "LLMs with LangChain" },
-  { text: "Actively contributed to ", highlight: "robotics R&D", tail: " with Jetson Xavier, Raspberry Pi, and ROS" },
-  { text: "Built internal tools like ", highlight: "BRAC USIS seat notifier", tail: " and agricultural management systems" },
-  { text: "Delivered software in sectors like ", highlight: "education, agriculture, digital marketing, and robotics" },
-  { text: "Finalist at ", highlight: "Bangladesh AI Hackathon 2025" },
+  { text: "Hands-on experience for more than 1.5 years in ", highlight: "AI Agents and WebApp Development", tail: ", applied across academic and freelance projects" },
+  { text: "Worked on ", highlight: "7 Different Paid ", tail: "Projects" },
+  { text: "Founding Member of ", highlight: "2 Startups", tail: "" },
+  { text: "Designed the full ", highlight: "Database and Backend", tail: " for a social Media with more than 1,000 Active users" },
+  { text: "Built complete Admin Pannel", highlight: " for Octobrain", tail: " to monitor it's social platform for Students" },
+  { text: "Contributed in making ", highlight: "2 ChatBOT solutions", tail: " for a Leading edtech platform in Bangladesh" },
+  { text: "Worked with AI buddy ", highlight: "to Make 2 personalized ChatBOT", tail: " for their Canadian Clients"  },
+  { text: "Experience in making ", highlight: "Webscrapper", tail: " that avoid Cloudflare protection"  },
+  { text: "First Runners Up and Global Nomine  from Dhaka Regiion in ", highlight: "NASA Space Apps Challenge 2022", tail: "" },
+    { text: "Finalist at ", highlight: "Bangladesh AI Hackathon 2025" },
+  { text: "Experience in intigration of ", highlight: "Payment and Different Signin Gateway", tail: " in Web Applications" },
+  { text: "Have expereince of Finetuning  ", highlight: "LLMS and Transformer models" },
   { text: "Awarded ", highlight: "50% Merit-Based Scholarship", tail: " at BRAC University" },
 ];
 
