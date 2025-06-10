@@ -3,22 +3,22 @@ import { SectionWrapper } from "../../hoc";
 
 const profileImg = "https://cvanalyzersmartgrad.blob.core.windows.net/octobrain-images/1749496089080-427974429_3600949756839247_6184173489217855334_n_1.jpg"; // Replace with actual image path
 
-const summary = `Hello I am Ikramul! To save you time, here’s a concise summary of my journey so far:`;
+const summary = `Hi, I’m Ikramul Kayes – a passionate and results-driven software developer with a strong foundation in AI, backend systems, and full-stack development. Here's a quick overview of my journey so far:`;  
 
 const highlights = [
-  { text: "Hands-on experience for more than 1.5 years in ", highlight: "AI Agents and WebApp Development", tail: ", applied across academic and freelance projects" },
-  { text: "Worked on ", highlight: "7 Different Paid ", tail: "Projects" },
-  { text: "Founding Member of ", highlight: "2 Startups", tail: "" },
-  { text: "Designed the full ", highlight: "Database and Backend", tail: " for a social Media with more than 1,000 Active users" },
-  { text: "Built complete Admin Pannel", highlight: " for Octobrain", tail: " to monitor it's social platform for Students" },
-  { text: "Contributed in making ", highlight: "2 ChatBOT solutions", tail: " for a Leading edtech platform in Bangladesh" },
-  { text: "Worked with AI buddy ", highlight: "to Make 2 personalized ChatBOT", tail: " for their Canadian Clients"  },
-  { text: "Experience in making ", highlight: "Webscrapper", tail: " that avoid Cloudflare protection"  },
-  { text: "First Runners Up and Global Nomine  from Dhaka Regiion in ", highlight: "NASA Space Apps Challenge 2022", tail: "" },
-    { text: "Finalist at ", highlight: "Bangladesh AI Hackathon 2025" },
-  { text: "Experience in intigration of ", highlight: "Payment and Different Signin Gateway", tail: " in Web Applications" },
-  { text: "Have expereince of Finetuning  ", highlight: "LLMS and Transformer models" },
-  { text: "Awarded ", highlight: "50% Merit-Based Scholarship", tail: " at BRAC University" },
+  { text: "Over 1.5 years of hands-on experience in ", highlight: "AI Agents and Web Applications", tail: ", spanning academic initiatives and freelance engagements." },
+  { text: "Successfully delivered ", highlight: "7+ paid", tail: " projects with a focus on reliability and efficiency." },
+  { text: "Founding member of ", highlight: "2 startup ventures", tail: ", demonstrating entrepreneurial leadership." },
+  { text: "Architected and implemented ", highlight: "database and backend infrastructure", tail: " for a social media platform with 1,000+ active users." },
+  { text: "Developed complete Admin Panel", highlight: " for Octobrain", tail: " to manage its student-centered social platform." },
+  { text: "Built and deployed ", highlight: "2 custom chatbot solutions", tail: " for a top edtech company in Bangladesh." },
+  { text: "Collaborated with AI Buddy ", highlight: "to build 2 personalized chatbot solutions", tail: " for Canadian clients." },
+  { text: "Engineered a robust ", highlight: "web scraper", tail: " capable of bypassing Cloudflare protection." },
+  { text: "First Runner-Up and Global Nominee from Dhaka region at ", highlight: "NASA Space Apps Challenge 2022", tail: "." },
+  { text: "Finalist at the ", highlight: "Bangladesh AI Hackathon 2025", tail: "." },
+  { text: "Integrated multiple ", highlight: "payment and authentication systems", tail: " in production-grade web applications." },
+  { text: "Experienced in ", highlight: "fine-tuning LLMs and transformer models", tail: " for domain-specific use cases." },
+  { text: "Recipient of a ", highlight: "50% merit-based scholarship", tail: " at BRAC University for academic excellence." },
 ];
 
 const contact = {
@@ -28,6 +28,7 @@ const contact = {
   phone: "+880-1994225023",
   cv: "#", // Replace with actual CV link
 };
+
 
 
 const Resume = () => (
