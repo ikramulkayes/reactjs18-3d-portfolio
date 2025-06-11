@@ -1,16 +1,31 @@
 import { SectionWrapper } from "../../hoc";
 
 const techStackColumns = [
-  [
-    "Docker", "Supabase", "Selenium", "Redis", "Cloudflare", "NestJS", "Fiddler", "Node.js", "SvelteKit", "TypeScript", "Pinecone", "PostGIS", "Jenkins", "Ansible"
+
+
+    [
+    "Docker",       "Kubernetes",       "Nginx",
+    "Jenkins",      "Github Actions",   "Azure",
+    "ArgoCD",       "Prometheus",       "Grafana",
+    "Proxy",        "GitHub",           "Wireshark",
+    "ROS",          "SvelteKit",        "Tailwind CSS"
   ],
   [
-    "AWS", "N8N", "Playwright", "RabbitMQ", "Terraform", "Nginx", "Express.js", "Prisma ORM", "Tailwind CSS", "RAG", "Faiss", "Kubernetes", "Langchain", "Prometheus"
+    "PyTorch",      "TensorFlow",       "Keras",
+    "RAG",          "Qdrant",           "Faiss",
+    "Unsloth",      "OpenAI",           "Selenium",
+    "PostgreSQL",   "MongoDB",          "MySQL",
+    "Prisma ORM",   "RabbitMQ",         "N8N"
   ],
   [
-    "Azure", "GitHub", "Jest", "Supertest", "Pulumi", "Wireshark", "Next.js", "React", "FastApi", "Qdrant", "PostgreSQL", "MongoDB", "OpenAI", "Grafana"
+    "Python",       "TypeScript",       "C++",
+    "FastAPI",      "Node.js",          "Go",
+    "Flask",        "Express.js",       "PHP",
+    "Django",       "NextJS",           "React",
+    "OpenCV",       "Langchain",        "Llama Factory",
   ]
 ];
+
 
 const Tech = () => {
   return (

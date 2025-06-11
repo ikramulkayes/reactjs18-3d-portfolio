@@ -277,6 +277,46 @@ const projects: TProject[] = [
     image: carrent,
     sourceCodeLink: "#",
   },
+  {
+    name: "Instagram Scraper for Celebrity Sponsorship Analysis",
+    description:
+      "Engineered a robust Instagram scraping solution for a digital agency serving top fashion brands. The system was designed to identify high-impact celebrities for product sponsorships by analyzing their followers and content. Key features included: Advanced Data Collection: Leveraged Selenium with rotating proxies to reliably extract comprehensive follower data, even at scale. Automated Computer Vision Analysis: Integrated a custom vision model to analyze profile and post images, identifying trending fashion products worn by users and celebrities. Scalable Architecture: Implemented asynchronous task scheduling with Uvicorn and RabbitMQ, enabling parallel scraping and analysis for maximum throughput. Actionable Insights: Delivered data-driven recommendations, empowering brands to target the most relevant celebrities for sponsorship. Engagement Automation: Developed a feature allowing celebrities to subscribe to our service, with bots posting context-aware, human-like comments on new Instagram uploads to boost engagement. This end-to-end solution enabled fashion brands to make informed sponsorship decisions and provided celebrities with automated, authentic audience interaction.",
+    tags: [
+      { name: "selenium", color: "blue-text-gradient" },
+      { name: "python", color: "green-text-gradient" },
+      { name: "computer-vision", color: "pink-text-gradient" },
+      { name: "mongodb", color: "orange-text-gradient" },
+      { name: "fastapi", color: "blue-text-gradient" },
+      { name: "rabbitmq", color: "green-text-gradient" },
+    ],
+    image: carrent,
+    sourceCodeLink: "#",
+  },
+  {
+    name: "Smartgrad Data Scraper for LLM Training",
+    description:
+      "Smartgrad, a leading digital agency for student university placement, required a large, diverse dataset to train their AI-powered chatbot. I developed a sophisticated web scraper targeting MastersPortal.com, overcoming significant anti-scraping measures: Cloudflare Bypass: Engineered a Selenium-based scraper with advanced proxy rotation and anti-bot evasion techniques to bypass Cloudflare protection. High-Volume Data Extraction: Automated the collection of global university data, including programs, requirements, and rankings, to fuel Smartgrad's LLM. Data Quality Assurance: Ensured clean, structured, and reliable data for seamless integration into Smartgrad's AI systems. This project enabled Smartgrad to rapidly scale their knowledge base, accelerating the development of their intelligent student advisory chatbot.",
+    tags: [
+      { name: "selenium", color: "blue-text-gradient" },
+      { name: "python", color: "green-text-gradient" },
+      { name: "cloudflare-bypass", color: "pink-text-gradient" },
+    ],
+    image: jobit,
+    sourceCodeLink: "#",
+  },
+  {
+    name: "Octobrain Admin Panel",
+    description:
+      "I designed and developed a comprehensive admin panel for Octobrain, an innovative edtech platform with integrated social features. The admin panel empowered staff to efficiently manage all aspects of the platform: Modern Frontend: Built with Svelte and Flowbite components for a responsive, intuitive user experience. Robust Backend: Utilized Node.js and PostgreSQL to ensure secure, scalable management of users, clubs, workshops, schools, and events. Full Platform Control: Enabled administrators to oversee and coordinate all activities, from event scheduling to user management, streamlining operations and enhancing platform reliability.",
+    tags: [
+      { name: "svelte", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "postgresql", color: "pink-text-gradient" },
+      { name: "flowbite", color: "orange-text-gradient" },
+    ],
+    image: tripguide,
+    sourceCodeLink: "#",
+  },
 ];
 
 export const education: TEducation[] = [

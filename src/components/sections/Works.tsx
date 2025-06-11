@@ -1,5 +1,7 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import Modal from "../atoms/Modal";
+import React, { useState } from "react";
 
 import { github } from "../../assets";
 import { SectionWrapper } from "../../hoc";
@@ -26,16 +28,19 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         tiltMaxAngleY={30}
         glareColor="#aaa6c3"
       >
-        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
-          <div className="relative h-[230px] w-full">
+        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px] h-[520px] flex flex-col">
+          <div className="relative h-[200px] w-full mb-3">
             <img
               src={image}
               alt={name}
               className="h-full w-full rounded-2xl object-cover"
             />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
+            <div className="card_img_hover absolute inset-0 m-3 flex justify-end">
               <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(sourceCodeLink, "_blank");
+                }}
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
               >
                 <img
@@ -46,16 +51,34 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               </div>
             </div>
           </div>
-          <div className="mt-5">
-            <h3 className="text-[24px] font-bold text-white">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
-          </div>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
+          
+          {/* Content section with more space */}
+          <div className="flex-1 flex flex-col min-h-0">
+            <div className="mb-3">
+              <h3 className="text-[24px] font-bold text-white mb-2 line-clamp-2">{name}</h3>
+            </div>
+            
+            {/* Description with more lines allowed */}
+            <div className="flex-1 mb-3 overflow-hidden">
+              <p className="text-secondary text-[14px] leading-[22px] overflow-hidden text-ellipsis"
+                 style={{
+                   display: '-webkit-box',
+                   WebkitLineClamp: 8,
+                   WebkitBoxOrient: 'vertical',
+                   maxHeight: '176px'
+                 }}>
+                {description}
               </p>
-            ))}
+            </div>
+            
+            {/* Tags section with more height */}
+            <div className="flex flex-wrap gap-2 h-[60px] overflow-hidden">
+              {tags.map((tag) => (
+                <p key={tag.name} className={`text-[12px] ${tag.color} whitespace-nowrap`}>
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </Tilt>
@@ -64,6 +87,19 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 };
 
 const Works = () => {
+  const [selectedProject, setSelectedProject] = useState<TProject | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCardClick = (project: TProject) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <>
       <Header useMotion={true} {...config.sections.works} />
@@ -79,9 +115,36 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <div key={`project-${index}`} onClick={() => handleCardClick(project)} className="cursor-pointer">
+            <ProjectCard index={index} {...project} />
+          </div>
         ))}
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        {selectedProject && (
+          <div>
+            <img src={selectedProject.image} alt={selectedProject.name} className="w-full h-48 object-cover rounded-lg mb-4" />
+            <h3 className="text-2xl font-bold mb-2">{selectedProject.name}</h3>
+            <p className="mb-2">{selectedProject.description}</p>
+            <div className="flex flex-wrap gap-2 mb-2">
+              {selectedProject.tags.map((tag) => (
+                <span key={tag.name} className={`text-sm ${tag.color}`}>#{tag.name}</span>
+              ))}
+            </div>
+            {selectedProject.sourceCodeLink && selectedProject.sourceCodeLink !== "#" && (
+              <a
+                href={selectedProject.sourceCodeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 px-4 py-2 bg-primary text-white rounded hover:bg-secondary"
+              >
+                View Source Code
+              </a>
+            )}
+          </div>
+        )}
+      </Modal>
     </>
   );
 };

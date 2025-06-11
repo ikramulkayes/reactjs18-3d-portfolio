@@ -3,7 +3,7 @@ import { SectionWrapper } from "../../hoc";
 
 const profileImg = "https://cvanalyzersmartgrad.blob.core.windows.net/octobrain-images/1749496089080-427974429_3600949756839247_6184173489217855334_n_1.jpg"; // Replace with actual image path
 
-const summary = `Hi, I’m Ikramul Kayes – a passionate and results-driven software developer with a strong foundation in AI, backend systems, and full-stack development. Here's a quick overview of my journey so far:`;  
+const summary = `Hi, I'm Ikramul Kayes – a passionate and results-driven software developer with a strong foundation in AI, backend systems, and full-stack development. Here's a quick overview of my journey so far:`;  
 
 const highlights = [
   { text: "Over 1.5 years of hands-on experience in ", highlight: "AI Agents and Web Applications", tail: ", spanning academic initiatives and freelance engagements." },
