@@ -123,26 +123,91 @@ const Works = () => {
 
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         {selectedProject && (
-          <div>
-            <img src={selectedProject.image} alt={selectedProject.name} className="w-full h-48 object-cover rounded-lg mb-4" />
-            <h3 className="text-2xl font-bold mb-2">{selectedProject.name}</h3>
-            <p className="mb-2">{selectedProject.description}</p>
-            <div className="flex flex-wrap gap-2 mb-2">
-              {selectedProject.tags.map((tag) => (
-                <span key={tag.name} className={`text-sm ${tag.color}`}>#{tag.name}</span>
-              ))}
+          <>
+            {/* Project Image - always at the top, full width, proper aspect ratio */}
+            <div className="w-full flex justify-center items-center mb-4">
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.name}
+                className="w-full max-h-64 object-cover rounded-lg"
+                style={{ aspectRatio: '16/9', background: '#222' }}
+              />
             </div>
-            {selectedProject.sourceCodeLink && selectedProject.sourceCodeLink !== "#" && (
-              <a
-                href={selectedProject.sourceCodeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-2 px-4 py-2 bg-primary text-white rounded hover:bg-secondary"
-              >
-                View Source Code
-              </a>
-            )}
-          </div>
+            <div>
+              {/* Project Name */}
+              <h3 className="text-2xl font-bold mb-2">{selectedProject.name}</h3>
+
+              {/* Tagline */}
+              {selectedProject.tagline && (
+                <h4 className="text-lg font-semibold text-secondary mb-2">
+                  {selectedProject.tagline}
+                </h4>
+              )}
+
+              {/* Detailed Description */}
+              {selectedProject.detailedDescription && (
+                <p className="mb-4">{selectedProject.detailedDescription}</p>
+              )}
+
+              {/* Website Link */}
+              {selectedProject.websiteLink && selectedProject.websiteLink !== "#" && (
+                <a
+                  href={selectedProject.websiteLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 underline mb-4 block"
+                >
+                  Visit App Website
+                </a>
+              )}
+
+              {/* My Role */}
+              {selectedProject.myRole && (
+                <>
+                  <h5 className="font-bold mt-4 mb-1">My Role:</h5>
+                  <p className="mb-4">{selectedProject.myRole}</p>
+                </>
+              )}
+
+              {/* Stack Used */}
+              {selectedProject.stackUsed && selectedProject.stackUsed.length > 0 && (
+                <>
+                  <h5 className="font-bold mb-1">Stack Used:</h5>
+                  <ul className="flex flex-wrap gap-2 mb-4">
+                    {selectedProject.stackUsed.map((tech) => (
+                      <li
+                        key={tech}
+                        className="bg-secondary text-white px-2 py-1 rounded text-xs"
+                      >
+                        {tech}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2 mb-2">
+                {selectedProject.tags.map((tag) => (
+                  <span key={tag.name} className={`text-sm ${tag.color}`}>
+                    #{tag.name}
+                  </span>
+                ))}
+              </div>
+
+              {/* Source Code Link */}
+              {selectedProject.sourceCodeLink && selectedProject.sourceCodeLink !== "#" && (
+                <a
+                  href={selectedProject.sourceCodeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 px-4 py-2 bg-primary text-white rounded hover:bg-secondary"
+                >
+                  View Source Code
+                </a>
+              )}
+            </div>
+          </>
         )}
       </Modal>
     </>

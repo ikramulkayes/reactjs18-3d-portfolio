@@ -241,6 +241,11 @@ const testimonials: TTestimonial[] = [
 const projects: TProject[] = [
   {
     name: "BD Smart Agricultural System",
+    tagline: "A Smart Platform for Agriculture in Bangladesh",
+    detailedDescription: "BD Smart Agricultural System is a full-stack web platform designed to revolutionize the agricultural ecosystem in Bangladesh by enabling collaborative blogging, dynamic auctions, and smart delivery tracking. Built with React for the frontend, Django for the backend, and a containerized MySQL database, the platform allows farmers and agricultural experts to share knowledge through blogs and comments. An efficient auction system lets clients bid above an admin-monitored base price, ensuring fair trade. Delivery personnel can choose jobs based on preference, and payments are held as pending until successful delivery is confirmed. Once confirmed, farmers receive their payment minus a service fee, making AgriConnect a secure, transparent, and scalable agri-marketplace.",
+    websiteLink: "#",
+    myRole: "Developed the full-stack platform, implemented the auction and delivery tracking systems, and ensured secure payment processing.",
+    stackUsed: ["React", "Django", "MySQL", "Docker"],
     description:
       "BD Smart Agricultural System  is a full-stack web platform designed to revolutionize the agricultural ecosystem in Bangladesh by enabling collaborative blogging, dynamic auctions, and smart delivery tracking. Built with React for the frontend, Django for the backend, and a containerized MySQL database, the platform allows farmers and agricultural experts to share knowledge through blogs and comments. An efficient auction system lets clients bid above an admin-monitored base price, ensuring fair trade. Delivery personnel can choose jobs based on preference, and payments are held as pending until successful delivery is confirmed. Once confirmed, farmers receive their payment minus a service fee, making AgriConnect a secure, transparent, and scalable agri-marketplace.",
     tags: [
@@ -253,6 +258,11 @@ const projects: TProject[] = [
   },
   {
     name: "University Club Management System",
+    tagline: "Centralized Club Activities for Universities",
+    detailedDescription: "The University Club Management System is a role-based web application designed to streamline and centralize club activities within a university setting. Built with PHP for backend logic, MySQL for structured data storage, and HTML/CSS for a responsive interface, the system supports multiple user roles including students, club executives, OCA admins, department representatives, advisors, and sponsors. Key features include a public-facing landing page showcasing active clubs and events, a dynamic login system with multi-role authentication, and tailored views such as the Member and Panel views for event participation and internal club management. Administrative views like OCA and Advisor enable event approval, fund distribution, and financial oversight, while the Sponsor view allows organizations to donate, track funding history, and engage with club events. The system ensures secure operations like one-time event participation and controlled access to member data, delivering a collaborative and transparent platform for club management, sponsorship, and student engagement.",
+    websiteLink: "#",
+    myRole: "Developed backend logic, implemented multi-role authentication, and designed the database schema.",
+    stackUsed: ["PHP", "MySQL", "HTML", "CSS"],
     description:
       "The University Club Management System is a role-based web application designed to streamline and centralize club activities within a university setting. Built with PHP for backend logic, MySQL for structured data storage, and HTML/CSS for a responsive interface, the system supports multiple user roles including students, club executives, OCA admins, department representatives, advisors, and sponsors. Key features include a public-facing landing page showcasing active clubs and events, a dynamic login system with multi-role authentication, and tailored views such as the Member and Panel views for event participation and internal club management. Administrative views like OCA and Advisor enable event approval, fund distribution, and financial oversight, while the Sponsor view allows organizations to donate, track funding history, and engage with club events. The system ensures secure operations like one-time event participation and controlled access to member data, delivering a collaborative and transparent platform for club management, sponsorship, and student engagement.",
     tags: [
@@ -263,9 +273,16 @@ const projects: TProject[] = [
     sourceCodeLink: "#",
   },
   {
-    name: "Octobrain",
+    name: "Octobrain a Social Media for Students",
+    tagline: "A Complete Social Media for Students",
+    detailedDescription: "Octobrain is a lively social media network built solely for students which has around 1,000 users. The network provides tools for post creation, comment writing, reaction selection, announcement display, connection making, notification delivery, along with ad placement. In addition, Octobrain improves student life by hosting activities such as workshops, competitions along with events, while also allowing easy access to course materials.",
+    websiteLink: "#", // Replace with actual link if available
+    myRole: "Designed the database and software architecture, developed the entire backend, created an admin panel using Svelte and integrated it with the backend, built a CI/CD pipeline using Jenkins, and hosted and maintained the application on Azure using Terraform and Ansible.",
+    stackUsed: [
+      "Express.js", "Svelte", "Postgresql", "Prisma ORM", "Azure VM", "Docker", "Azure blob storage", "Jenkins", "Terraform", "Prometheus", "Grafana", "Ansible"
+    ],
     description:
-      "OpenGL project: two artillery battle with each other by shooting artillery shells at the opponents.",
+      "Octobrain is a lively social media network built solely for students which has around 1,000 users. The network provides tools for post creation, comment writing, reaction selection, announcement display, connection making, notification delivery, along with ad placement. In addition, Octobrain improves student life by hosting activities such as workshops, competitions along with events, while also allowing easy access to course materials.",
     tags: [
       { name: "opengl", color: "blue-text-gradient" },
       { name: "c++", color: "green-text-gradient" },
@@ -275,6 +292,11 @@ const projects: TProject[] = [
   },
   {
     name: "USIS Advising seat notifier",
+    tagline: "Automated Seat Notification for University Advising",
+    detailedDescription: "Dynamic solution for BRAC University Advising Platform. Alerts users via email when a coveted seat becomes available in a specified course section.",
+    websiteLink: "#",
+    myRole: "Developed the email notification system and integrated it with the university advising platform.",
+    stackUsed: ["Python", "Automation"],
     description:
       "Dynamic solution for BRAC University Advising Platform. Alerts users via email when a coveted seat becomes available in a specified course section.",
     tags: [
@@ -286,6 +308,11 @@ const projects: TProject[] = [
   },
   {
     name: "Instagram Scraper for Celebrity Sponsorship Analysis",
+    tagline: "Automated Instagram Scraping and Analysis for Brands",
+    detailedDescription: "Engineered a robust Instagram scraping solution for a digital agency serving top fashion brands. The system was designed to identify high-impact celebrities for product sponsorships by analyzing their followers and content. Key features included: Advanced Data Collection: Leveraged Selenium with rotating proxies to reliably extract comprehensive follower data, even at scale. Automated Computer Vision Analysis: Integrated a custom vision model to analyze profile and post images, identifying trending fashion products worn by users and celebrities. Scalable Architecture: Implemented asynchronous task scheduling with Uvicorn and RabbitMQ, enabling parallel scraping and analysis for maximum throughput. Actionable Insights: Delivered data-driven recommendations, empowering brands to target the most relevant celebrities for sponsorship. Engagement Automation: Developed a feature allowing celebrities to subscribe to our service, with bots posting context-aware, human-like comments on new Instagram uploads to boost engagement. This end-to-end solution enabled fashion brands to make informed sponsorship decisions and provided celebrities with automated, authentic audience interaction.",
+    websiteLink: "#",
+    myRole: "Developed the scraping engine, integrated computer vision analysis, and built the engagement automation features.",
+    stackUsed: ["Selenium", "Python", "Computer Vision", "MongoDB", "FastAPI", "RabbitMQ"],
     description:
       "Engineered a robust Instagram scraping solution for a digital agency serving top fashion brands. The system was designed to identify high-impact celebrities for product sponsorships by analyzing their followers and content. Key features included: Advanced Data Collection: Leveraged Selenium with rotating proxies to reliably extract comprehensive follower data, even at scale. Automated Computer Vision Analysis: Integrated a custom vision model to analyze profile and post images, identifying trending fashion products worn by users and celebrities. Scalable Architecture: Implemented asynchronous task scheduling with Uvicorn and RabbitMQ, enabling parallel scraping and analysis for maximum throughput. Actionable Insights: Delivered data-driven recommendations, empowering brands to target the most relevant celebrities for sponsorship. Engagement Automation: Developed a feature allowing celebrities to subscribe to our service, with bots posting context-aware, human-like comments on new Instagram uploads to boost engagement. This end-to-end solution enabled fashion brands to make informed sponsorship decisions and provided celebrities with automated, authentic audience interaction.",
     tags: [
@@ -301,6 +328,11 @@ const projects: TProject[] = [
   },
   {
     name: "Smartgrad Data Scraper for LLM Training",
+    tagline: "Automated Data Collection for AI Training",
+    detailedDescription: "Smartgrad, a leading digital agency for student university placement, required a large, diverse dataset to train their AI-powered chatbot. I developed a sophisticated web scraper targeting MastersPortal.com, overcoming significant anti-scraping measures: Cloudflare Bypass: Engineered a Selenium-based scraper with advanced proxy rotation and anti-bot evasion techniques to bypass Cloudflare protection. High-Volume Data Extraction: Automated the collection of global university data, including programs, requirements, and rankings, to fuel Smartgrad's LLM. Data Quality Assurance: Ensured clean, structured, and reliable data for seamless integration into Smartgrad's AI systems. This project enabled Smartgrad to rapidly scale their knowledge base, accelerating the development of their intelligent student advisory chatbot.",
+    websiteLink: "#",
+    myRole: "Developed the web scraper, implemented anti-bot evasion, and ensured data quality for AI training.",
+    stackUsed: ["Selenium", "Python", "Cloudflare Bypass"],
     description:
       "Smartgrad, a leading digital agency for student university placement, required a large, diverse dataset to train their AI-powered chatbot. I developed a sophisticated web scraper targeting MastersPortal.com, overcoming significant anti-scraping measures: Cloudflare Bypass: Engineered a Selenium-based scraper with advanced proxy rotation and anti-bot evasion techniques to bypass Cloudflare protection. High-Volume Data Extraction: Automated the collection of global university data, including programs, requirements, and rankings, to fuel Smartgrad's LLM. Data Quality Assurance: Ensured clean, structured, and reliable data for seamless integration into Smartgrad's AI systems. This project enabled Smartgrad to rapidly scale their knowledge base, accelerating the development of their intelligent student advisory chatbot.",
     tags: [
@@ -313,6 +345,11 @@ const projects: TProject[] = [
   },
   {
     name: "Octobrain Admin Panel",
+    tagline: "Comprehensive Admin Panel for EdTech Platform",
+    detailedDescription: "I designed and developed a comprehensive admin panel for Octobrain, an innovative edtech platform with integrated social features. The admin panel empowered staff to efficiently manage all aspects of the platform: Modern Frontend: Built with Svelte and Flowbite components for a responsive, intuitive user experience. Robust Backend: Utilized Node.js and PostgreSQL to ensure secure, scalable management of users, clubs, workshops, schools, and events. Full Platform Control: Enabled administrators to oversee and coordinate all activities, from event scheduling to user management, streamlining operations and enhancing platform reliability.",
+    websiteLink: "#",
+    myRole: "Designed and developed the admin panel, integrated it with the backend, and ensured platform reliability.",
+    stackUsed: ["Svelte", "Node.js", "PostgreSQL", "Flowbite"],
     description:
       "I designed and developed a comprehensive admin panel for Octobrain, an innovative edtech platform with integrated social features. The admin panel empowered staff to efficiently manage all aspects of the platform: Modern Frontend: Built with Svelte and Flowbite components for a responsive, intuitive user experience. Robust Backend: Utilized Node.js and PostgreSQL to ensure secure, scalable management of users, clubs, workshops, schools, and events. Full Platform Control: Enabled administrators to oversee and coordinate all activities, from event scheduling to user management, streamlining operations and enhancing platform reliability.",
     tags: [

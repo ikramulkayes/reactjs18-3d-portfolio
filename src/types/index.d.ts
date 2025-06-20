@@ -26,6 +26,11 @@ export type TProject = {
   }[];
   image: string;
   sourceCodeLink: string;
+  tagline?: string;
+  detailedDescription?: string;
+  websiteLink?: string;
+  myRole?: string;
+  stackUsed?: string[];
 } & Required<Pick<TCommonProps, "name">>;
 
 export type TTechnology = Required<Omit<TCommonProps, "title">>;
