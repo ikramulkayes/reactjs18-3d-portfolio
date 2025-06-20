@@ -239,39 +239,7 @@ const testimonials: TTestimonial[] = [
 ];
 
 const projects: TProject[] = [
-  {
-    name: "BD Smart Agricultural System",
-    tagline: "A Smart Platform for Agriculture in Bangladesh",
-    detailedDescription: "BD Smart Agricultural System is a full-stack web platform designed to revolutionize the agricultural ecosystem in Bangladesh by enabling collaborative blogging, dynamic auctions, and smart delivery tracking. Built with React for the frontend, Django for the backend, and a containerized MySQL database, the platform allows farmers and agricultural experts to share knowledge through blogs and comments. An efficient auction system lets clients bid above an admin-monitored base price, ensuring fair trade. Delivery personnel can choose jobs based on preference, and payments are held as pending until successful delivery is confirmed. Once confirmed, farmers receive their payment minus a service fee, making AgriConnect a secure, transparent, and scalable agri-marketplace.",
-    websiteLink: "#",
-    myRole: "Developed the full-stack platform, implemented the auction and delivery tracking systems, and ensured secure payment processing.",
-    stackUsed: ["React", "Django", "MySQL", "Docker"],
-    description:
-      "BD Smart Agricultural System  is a full-stack web platform designed to revolutionize the agricultural ecosystem in Bangladesh by enabling collaborative blogging, dynamic auctions, and smart delivery tracking. Built with React for the frontend, Django for the backend, and a containerized MySQL database, the platform allows farmers and agricultural experts to share knowledge through blogs and comments. An efficient auction system lets clients bid above an admin-monitored base price, ensuring fair trade. Delivery personnel can choose jobs based on preference, and payments are held as pending until successful delivery is confirmed. Once confirmed, farmers receive their payment minus a service fee, making AgriConnect a secure, transparent, and scalable agri-marketplace.",
-    tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "django", color: "green-text-gradient" },
-      { name: "mysql", color: "pink-text-gradient" },
-    ],
-    image: bdsmartagri,
-    sourceCodeLink: "#",
-  },
-  {
-    name: "University Club Management System",
-    tagline: "Centralized Club Activities for Universities",
-    detailedDescription: "The University Club Management System is a role-based web application designed to streamline and centralize club activities within a university setting. Built with PHP for backend logic, MySQL for structured data storage, and HTML/CSS for a responsive interface, the system supports multiple user roles including students, club executives, OCA admins, department representatives, advisors, and sponsors. Key features include a public-facing landing page showcasing active clubs and events, a dynamic login system with multi-role authentication, and tailored views such as the Member and Panel views for event participation and internal club management. Administrative views like OCA and Advisor enable event approval, fund distribution, and financial oversight, while the Sponsor view allows organizations to donate, track funding history, and engage with club events. The system ensures secure operations like one-time event participation and controlled access to member data, delivering a collaborative and transparent platform for club management, sponsorship, and student engagement.",
-    websiteLink: "#",
-    myRole: "Developed backend logic, implemented multi-role authentication, and designed the database schema.",
-    stackUsed: ["PHP", "MySQL", "HTML", "CSS"],
-    description:
-      "The University Club Management System is a role-based web application designed to streamline and centralize club activities within a university setting. Built with PHP for backend logic, MySQL for structured data storage, and HTML/CSS for a responsive interface, the system supports multiple user roles including students, club executives, OCA admins, department representatives, advisors, and sponsors. Key features include a public-facing landing page showcasing active clubs and events, a dynamic login system with multi-role authentication, and tailored views such as the Member and Panel views for event participation and internal club management. Administrative views like OCA and Advisor enable event approval, fund distribution, and financial oversight, while the Sponsor view allows organizations to donate, track funding history, and engage with club events. The system ensures secure operations like one-time event participation and controlled access to member data, delivering a collaborative and transparent platform for club management, sponsorship, and student engagement.",
-    tags: [
-      { name: "php", color: "blue-text-gradient" },
-      { name: "mysql", color: "green-text-gradient" },
-    ],
-    image: univeristyclub,
-    sourceCodeLink: "#",
-  },
+
   {
     name: "Octobrain a Social Media for Students",
     tagline: "A Complete Social Media for Students",
@@ -290,23 +258,7 @@ const projects: TProject[] = [
     image: octobrainfrontend,
     sourceCodeLink: "#",
   },
-  {
-    name: "USIS Advising seat notifier",
-    tagline: "Automated Seat Notification for University Advising",
-    detailedDescription: "Dynamic solution for BRAC University Advising Platform. Alerts users via email when a coveted seat becomes available in a specified course section.",
-    websiteLink: "#",
-    myRole: "Developed the email notification system and integrated it with the university advising platform.",
-    stackUsed: ["Python", "Automation"],
-    description:
-      "Dynamic solution for BRAC University Advising Platform. Alerts users via email when a coveted seat becomes available in a specified course section.",
-    tags: [
-      { name: "python", color: "blue-text-gradient" },
-      { name: "automation", color: "green-text-gradient" },
-    ],
-    image: usisadvising,
-    sourceCodeLink: "#",
-  },
-  {
+ {
     name: "Instagram Scraper for Celebrity Sponsorship Analysis",
     tagline: "Automated Instagram Scraping and Analysis for Brands",
     detailedDescription: "Engineered a robust Instagram scraping solution for a digital agency serving top fashion brands. The system was designed to identify high-impact celebrities for product sponsorships by analyzing their followers and content. Key features included: Advanced Data Collection: Leveraged Selenium with rotating proxies to reliably extract comprehensive follower data, even at scale. Automated Computer Vision Analysis: Integrated a custom vision model to analyze profile and post images, identifying trending fashion products worn by users and celebrities. Scalable Architecture: Implemented asynchronous task scheduling with Uvicorn and RabbitMQ, enabling parallel scraping and analysis for maximum throughput. Actionable Insights: Delivered data-driven recommendations, empowering brands to target the most relevant celebrities for sponsorship. Engagement Automation: Developed a feature allowing celebrities to subscribe to our service, with bots posting context-aware, human-like comments on new Instagram uploads to boost engagement. This end-to-end solution enabled fashion brands to make informed sponsorship decisions and provided celebrities with automated, authentic audience interaction.",
@@ -361,6 +313,58 @@ const projects: TProject[] = [
     image: octoadminpannel,
     sourceCodeLink: "#",
   },
+  {
+    name: "BD Smart Agricultural System",
+    tagline: "A Smart Platform for Agriculture in Bangladesh",
+    detailedDescription: "BD Smart Agricultural System is a full-stack web platform designed to revolutionize the agricultural ecosystem in Bangladesh by enabling collaborative blogging, dynamic auctions, and smart delivery tracking. Built with React for the frontend, Django for the backend, and a containerized MySQL database, the platform allows farmers and agricultural experts to share knowledge through blogs and comments. An efficient auction system lets clients bid above an admin-monitored base price, ensuring fair trade. Delivery personnel can choose jobs based on preference, and payments are held as pending until successful delivery is confirmed. Once confirmed, farmers receive their payment minus a service fee, making AgriConnect a secure, transparent, and scalable agri-marketplace.",
+    websiteLink: "#",
+    myRole: "Developed the full-stack platform, implemented the auction and delivery tracking systems, and ensured secure payment processing.",
+    stackUsed: ["React", "Django", "MySQL", "Docker"],
+    description:
+      "BD Smart Agricultural System  is a full-stack web platform designed to revolutionize the agricultural ecosystem in Bangladesh by enabling collaborative blogging, dynamic auctions, and smart delivery tracking. Built with React for the frontend, Django for the backend, and a containerized MySQL database, the platform allows farmers and agricultural experts to share knowledge through blogs and comments. An efficient auction system lets clients bid above an admin-monitored base price, ensuring fair trade. Delivery personnel can choose jobs based on preference, and payments are held as pending until successful delivery is confirmed. Once confirmed, farmers receive their payment minus a service fee, making AgriConnect a secure, transparent, and scalable agri-marketplace.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "django", color: "green-text-gradient" },
+      { name: "mysql", color: "pink-text-gradient" },
+    ],
+    image: bdsmartagri,
+    sourceCodeLink: "#",
+  },
+  {
+    name: "University Club Management System",
+    tagline: "Centralized Club Activities for Universities",
+    detailedDescription: "The University Club Management System is a role-based web application designed to streamline and centralize club activities within a university setting. Built with PHP for backend logic, MySQL for structured data storage, and HTML/CSS for a responsive interface, the system supports multiple user roles including students, club executives, OCA admins, department representatives, advisors, and sponsors. Key features include a public-facing landing page showcasing active clubs and events, a dynamic login system with multi-role authentication, and tailored views such as the Member and Panel views for event participation and internal club management. Administrative views like OCA and Advisor enable event approval, fund distribution, and financial oversight, while the Sponsor view allows organizations to donate, track funding history, and engage with club events. The system ensures secure operations like one-time event participation and controlled access to member data, delivering a collaborative and transparent platform for club management, sponsorship, and student engagement.",
+    websiteLink: "#",
+    myRole: "Developed backend logic, implemented multi-role authentication, and designed the database schema.",
+    stackUsed: ["PHP", "MySQL", "HTML", "CSS"],
+    description:
+      "The University Club Management System is a role-based web application designed to streamline and centralize club activities within a university setting. Built with PHP for backend logic, MySQL for structured data storage, and HTML/CSS for a responsive interface, the system supports multiple user roles including students, club executives, OCA admins, department representatives, advisors, and sponsors. Key features include a public-facing landing page showcasing active clubs and events, a dynamic login system with multi-role authentication, and tailored views such as the Member and Panel views for event participation and internal club management. Administrative views like OCA and Advisor enable event approval, fund distribution, and financial oversight, while the Sponsor view allows organizations to donate, track funding history, and engage with club events. The system ensures secure operations like one-time event participation and controlled access to member data, delivering a collaborative and transparent platform for club management, sponsorship, and student engagement.",
+    tags: [
+      { name: "php", color: "blue-text-gradient" },
+      { name: "mysql", color: "green-text-gradient" },
+    ],
+    image: univeristyclub,
+    sourceCodeLink: "#",
+  },
+
+
+  {
+    name: "USIS Advising seat notifier",
+    tagline: "Automated Seat Notification for University Advising",
+    detailedDescription: "Dynamic solution for BRAC University Advising Platform. Alerts users via email when a coveted seat becomes available in a specified course section.",
+    websiteLink: "#",
+    myRole: "Developed the email notification system and integrated it with the university advising platform.",
+    stackUsed: ["Python", "Automation"],
+    description:
+      "Dynamic solution for BRAC University Advising Platform. Alerts users via email when a coveted seat becomes available in a specified course section.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "automation", color: "green-text-gradient" },
+    ],
+    image: usisadvising,
+    sourceCodeLink: "#",
+  },
+ 
 ];
 
 export const education: TEducation[] = [
