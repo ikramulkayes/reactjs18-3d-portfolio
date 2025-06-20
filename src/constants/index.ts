@@ -34,6 +34,13 @@ import {
   jobit,
   tripguide,
   threejs,
+  univeristyclub,
+  usisadvising,
+  smartgrad,
+  instagramscraper,
+  octoadminpannel,
+  bdsmartagri,
+  octobrainfrontend,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -235,35 +242,35 @@ const projects: TProject[] = [
   {
     name: "BD Smart Agricultural System",
     description:
-      "Collaborative blogging, efficient auctions, and streamlined delivery tracking for agricultural solutions in Bangladesh. React as frontend, Django as backend, containerized MySQL as database.",
+      "BD Smart Agricultural System  is a full-stack web platform designed to revolutionize the agricultural ecosystem in Bangladesh by enabling collaborative blogging, dynamic auctions, and smart delivery tracking. Built with React for the frontend, Django for the backend, and a containerized MySQL database, the platform allows farmers and agricultural experts to share knowledge through blogs and comments. An efficient auction system lets clients bid above an admin-monitored base price, ensuring fair trade. Delivery personnel can choose jobs based on preference, and payments are held as pending until successful delivery is confirmed. Once confirmed, farmers receive their payment minus a service fee, making AgriConnect a secure, transparent, and scalable agri-marketplace.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       { name: "django", color: "green-text-gradient" },
       { name: "mysql", color: "pink-text-gradient" },
     ],
-    image: carrent,
+    image: bdsmartagri,
     sourceCodeLink: "#",
   },
   {
     name: "University Club Management System",
     description:
-      "PHP-based website for managing club activities, events, and member roles. MySQL as database.",
+      "The University Club Management System is a role-based web application designed to streamline and centralize club activities within a university setting. Built with PHP for backend logic, MySQL for structured data storage, and HTML/CSS for a responsive interface, the system supports multiple user roles including students, club executives, OCA admins, department representatives, advisors, and sponsors. Key features include a public-facing landing page showcasing active clubs and events, a dynamic login system with multi-role authentication, and tailored views such as the Member and Panel views for event participation and internal club management. Administrative views like OCA and Advisor enable event approval, fund distribution, and financial oversight, while the Sponsor view allows organizations to donate, track funding history, and engage with club events. The system ensures secure operations like one-time event participation and controlled access to member data, delivering a collaborative and transparent platform for club management, sponsorship, and student engagement.",
     tags: [
       { name: "php", color: "blue-text-gradient" },
       { name: "mysql", color: "green-text-gradient" },
     ],
-    image: jobit,
+    image: univeristyclub,
     sourceCodeLink: "#",
   },
   {
-    name: "Artillery War",
+    name: "Octobrain",
     description:
       "OpenGL project: two artillery battle with each other by shooting artillery shells at the opponents.",
     tags: [
       { name: "opengl", color: "blue-text-gradient" },
       { name: "c++", color: "green-text-gradient" },
     ],
-    image: tripguide,
+    image: octobrainfrontend,
     sourceCodeLink: "#",
   },
   {
@@ -274,7 +281,7 @@ const projects: TProject[] = [
       { name: "python", color: "blue-text-gradient" },
       { name: "automation", color: "green-text-gradient" },
     ],
-    image: carrent,
+    image: usisadvising,
     sourceCodeLink: "#",
   },
   {
@@ -289,7 +296,7 @@ const projects: TProject[] = [
       { name: "fastapi", color: "blue-text-gradient" },
       { name: "rabbitmq", color: "green-text-gradient" },
     ],
-    image: carrent,
+    image: instagramscraper,
     sourceCodeLink: "#",
   },
   {
@@ -301,7 +308,7 @@ const projects: TProject[] = [
       { name: "python", color: "green-text-gradient" },
       { name: "cloudflare-bypass", color: "pink-text-gradient" },
     ],
-    image: jobit,
+    image: smartgrad,
     sourceCodeLink: "#",
   },
   {
@@ -314,7 +321,7 @@ const projects: TProject[] = [
       { name: "postgresql", color: "pink-text-gradient" },
       { name: "flowbite", color: "orange-text-gradient" },
     ],
-    image: tripguide,
+    image: octoadminpannel,
     sourceCodeLink: "#",
   },
 ];

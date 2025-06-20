@@ -28,6 +28,13 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import univeristyclub from "./univeristyclub.png";
+import usisadvising from "./usisadvising.png";
+import  smartgrad from "./smartgrad.png";
+import instagramscraper from "./instagramscraper.png";
+import octoadminpannel from "./octoadminpannel.png";
+import bdsmartagri from "./bdsmartagri.png";
+import octobrainfrontend from "./octobrainfrontend.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -59,4 +66,13 @@ export {
   carrent,
   jobit,
   tripguide,
+  univeristyclub,
+  usisadvising,
+  smartgrad,
+  instagramscraper,
+  octoadminpannel,
+  bdsmartagri,
+  octobrainfrontend
+  
+
 };
